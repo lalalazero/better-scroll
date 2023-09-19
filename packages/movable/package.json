@@ -30,6 +30,6 @@
     "directory": "packages/observe-dom"
   },
   "dependencies": {
-    "@better-scroll/core": "^2.5.1"
+    "@better-scroll/core": "workspace:^"
   }
 }

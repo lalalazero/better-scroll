@@ -31,20 +31,20 @@
     "directory": "packages/better-scroll"
   },
   "dependencies": {
-    "@better-scroll/core": "^2.5.1",
-    "@better-scroll/indicators": "^2.5.1",
-    "@better-scroll/infinity": "^2.5.1",
-    "@better-scroll/mouse-wheel": "^2.5.1",
-    "@better-scroll/movable": "^2.5.1",
-    "@better-scroll/nested-scroll": "^2.5.1",
-    "@better-scroll/observe-dom": "^2.5.1",
-    "@better-scroll/observe-image": "^2.5.1",
-    "@better-scroll/pull-down": "^2.5.1",
-    "@better-scroll/pull-up": "^2.5.1",
-    "@better-scroll/scroll-bar": "^2.5.1",
-    "@better-scroll/slide": "^2.5.1",
-    "@better-scroll/wheel": "^2.5.1",
-    "@better-scroll/zoom": "^2.5.1"
+    "@better-scroll/core": "workspace:^",
+    "@better-scroll/indicators": "workspace:^",
+    "@better-scroll/infinity": "workspace:^",
+    "@better-scroll/mouse-wheel": "workspace:^",
+    "@better-scroll/movable": "workspace:^",
+    "@better-scroll/nested-scroll": "workspace:^",
+    "@better-scroll/observe-dom": "workspace:^",
+    "@better-scroll/observe-image": "workspace:^",
+    "@better-scroll/pull-down": "workspace:^",
+    "@better-scroll/pull-up": "workspace:^",
+    "@better-scroll/scroll-bar": "workspace:^",
+    "@better-scroll/slide": "workspace:^",
+    "@better-scroll/wheel": "workspace:^",
+    "@better-scroll/zoom": "workspace:^"
   },
   "gitHead": "f441227b6137d44ba0b44b97ed4cd49de9386130"
 }

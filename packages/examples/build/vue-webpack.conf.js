@@ -224,7 +224,7 @@ if (e2e) {
       // back to src directory
       const cwd = path.join(__dirname, '../../')
 
-      await execa('yarn', ['test:e2e'], { stdio: 'inherit', cwd })
+      await execa('pnpm', ['test:e2e'], { stdio: 'inherit', cwd })
     })
   }
 }

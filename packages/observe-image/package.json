@@ -28,6 +28,6 @@
     "url": "https://github.com/ustbhuangyi/better-scroll/issues"
   },
   "dependencies": {
-    "@better-scroll/core": "^2.5.1"
+    "@better-scroll/core": "workspace:^"
   }
 }

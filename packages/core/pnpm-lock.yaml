@@ -1,0 +1,7 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@better-scroll/shared-utils': ^2.5.1
+
+dependencies:
+  '@better-scroll/shared-utils': link:../shared-utils

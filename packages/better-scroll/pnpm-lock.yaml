@@ -1,0 +1,33 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@better-scroll/core': ^2.5.1
+  '@better-scroll/indicators': ^2.5.1
+  '@better-scroll/infinity': ^2.5.1
+  '@better-scroll/mouse-wheel': ^2.5.1
+  '@better-scroll/movable': ^2.5.1
+  '@better-scroll/nested-scroll': ^2.5.1
+  '@better-scroll/observe-dom': ^2.5.1
+  '@better-scroll/observe-image': ^2.5.1
+  '@better-scroll/pull-down': ^2.5.1
+  '@better-scroll/pull-up': ^2.5.1
+  '@better-scroll/scroll-bar': ^2.5.1
+  '@better-scroll/slide': ^2.5.1
+  '@better-scroll/wheel': ^2.5.1
+  '@better-scroll/zoom': ^2.5.1
+
+dependencies:
+  '@better-scroll/core': link:../core
+  '@better-scroll/indicators': link:../indicators
+  '@better-scroll/infinity': link:../infinity
+  '@better-scroll/mouse-wheel': link:../mouse-wheel
+  '@better-scroll/movable': link:../movable
+  '@better-scroll/nested-scroll': link:../nested-scroll
+  '@better-scroll/observe-dom': link:../observe-dom
+  '@better-scroll/observe-image': link:../observe-image
+  '@better-scroll/pull-down': link:../pull-down
+  '@better-scroll/pull-up': link:../pull-up
+  '@better-scroll/scroll-bar': link:../scroll-bar
+  '@better-scroll/slide': link:../slide
+  '@better-scroll/wheel': link:../wheel
+  '@better-scroll/zoom': link:../zoom

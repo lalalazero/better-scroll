@@ -1,0 +1,7 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@better-scroll/core': ^2.5.1
+
+dependencies:
+  '@better-scroll/core': link:../core
