@@ -12,6 +12,10 @@ const ora = require('ora')
 const spinner = ora({
   prefixText: `${chalk.green('\n[building tasks]')}`
 })
+const os = require('os')
+const windows = os.platform() === 'win32'
+const fsExtra = require('fs-extra')
+const glob = require('glob')
 
 function getPackagesName () {
   let ret
@@ -188,9 +192,20 @@ function buildEntry(config, curIndex, next) {
 
 function copyDTSFiles (packageName) {
   console.log(chalk.cyan('> start copying .d.ts file to dist dir of packages own.'))
-  const sourceDir = resolve(`packages/${packageName}/dist/packages/${packageName}/src/*`)
+  const sourceDir = resolve(`packages/${packageName}/dist/packages/${packageName}/src`)
   const targetDir = resolve(`packages/${packageName}/dist/types/`)
-  execa.commandSync(`mv ${sourceDir} ${targetDir}`, { shell: true })
+  if(!windows) {
+    execa.commandSync(`mv ${sourceDir}/* ${targetDir}`, { shell: true })
+  }else{
+    const files = glob.globSync(`${sourceDir}/**/*`)
+
+    for(let i = 0; i < files.length; i++) {
+      const file = files[i]
+      const relativePath = path.relative(sourceDir, file)
+      const destPath = path.join(targetDir, relativePath)
+      fsExtra.copySync(file, destPath)
+    }
+  }
   console.log(chalk.cyan('> copy job is done.'))
   rimraf.sync(resolve(`packages/${packageName}/dist/packages`))
   rimraf.sync(resolve(`packages/${packageName}/dist/node_modules`))
