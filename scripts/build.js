@@ -221,7 +221,7 @@ function copyDTSFiles(packageName) {
     glob.sync(`${sourceDir}/**/*`).forEach((file) => {
       const relativePath = path.relative(sourceDir, file)
       const destPath = path.join(targetDir, relativePath)
-      fsExtra.copyFileSync(file, destPath)
+      fsExtra.copySync(file, destPath)
     })
   } else {
     execa.commandSync(`mv ${sourceDir}/* ${targetDir}`, { shell: true })
